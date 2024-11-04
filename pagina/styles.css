@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+    body {
+      background-color: rgb(45, 76, 138);
+      display: grid;
+      place-items: center;
+      margin-top: 40px;
+    }
+  
+
+#formulario1{
+  background-color: rgb(0, 132, 255);
+  width: 320px;
+  height: 180px;
+  margin-top: 40px;
+  padding: 40px;
+  border-radius: 10px;
+  border-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+  
+#formulario2{
+  background-color: rgb(0, 132, 255);
+  width: 320px;
+  height: 50px;
+  margin-top: 40px;
+  padding: 40px;
+  border-radius: 10px;
+  border-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+  
+
+#contenedorGeneral1{
+  display: inline-flex;
+  margin: 20px;
+  justify-content: center;
+  align-content: center;
+  
+
+}
+#productos{
+  
+  background-color: green;
+  width: 400px;
+  height: 550px;
+  margin: 5px;
+}
+
+#detalles{
+  display: grid;
+  background-color: red;
+  width: 400px;
+  height: 550px;
+  margin: 5px;
+  justify-content: center;
+  align-content: center;
+
+}
+
+#datos2{
+  
+  margin: 5px;
+  background-color: rgb(22, 21, 21);
+  width: 320px;
+  height: 250px;
+}
+
+#opcioncarrito{
+  display:grid;
+  justify-content: center;
+  
+}
+
+#seguirlaCompra{
+  margin:5px;
+display:flex;
+justify-content: space-around;
+}
+
+#contenedorGeneral2{
+  display: inline-flex;
+  margin: 20px;
+  justify-content: center;
+  align-content: center;
+
+}
+
+#compraActual{
+  
+  background-color: green;
+  width: 400px;
+  height: 550px;
+  margin: 5px;
+}
+
+#ResumenyTarjeta{
+  display: grid;
+  background-color: red;
+  width: 400px;
+  height: 550px;
+  margin: 5px;
+  justify-content:center;
+  align-items: center;
+ 
+}
+
+#formularioCarrito{
+  display: grid;
+  justify-content:center;
+  align-items: center;
+  margin-top: 5px;
+  
+}
+
+#botonesnav{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+   
+}
+#campostarjeta{
+  width: 350px;
+  
+  display: inline-block;
+  justify-content:center;
+  align-items: center;
+
+ 
+}
+#porfincompra{
+  display:flex;
+  justify-content: center;
+  
+}
