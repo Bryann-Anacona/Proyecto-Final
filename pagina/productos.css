@@ -27,24 +27,12 @@
     width: 500px;
     height: 550px;
     margin: 5px;
+    
     overflow-y: scroll; /* Habilitamos el scroll vertical */
   }
   
 
-  .productosDiv{
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    max-width: 260px;
-    text-align: center;
-    transition: all 0.3s
-  }
-  #producti-imagen {
-    width: 100px;
-    height: 50px;
-    border: 1px solid black;
-  }
+
 
 
   #detalles{

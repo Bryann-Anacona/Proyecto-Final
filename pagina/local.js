@@ -35,6 +35,10 @@ function guardar_formulario1(){
         window.location.href = 'productos.html';
      }
        
+     function irAotraPantalla2() {
+        window.location.href = 'carrito.html';
+     }
+     
      const boton = document.getElementById('comprar');
 
         boton.addEventListener('click', guardar_formulario1);
