@@ -16,7 +16,7 @@
 
     <div id="formulario1">
         <label for="nombre">Nombre: </label>
-        <input id="nombre" type="text" name="" value="">
+        <input id="nombre" type="text" name="" value=""  maxlength="50" minlength="10">
         <br>
         <br>
 
@@ -26,7 +26,7 @@
         <br>
 
         <label for="cantArticulos">Cantidad Artículos:</label>
-        <input id="cantArticulos" type="text" name="" value="">
+        <input id="cantArticulos" type="number"  min="1" max="20">
         <br>
         <br>
 
@@ -40,16 +40,16 @@
         <p>Elija el metodo de entrega:</p> <br>
 
         Domicilio:
-        <input type="radio" name="estado" value="1"> 
+        <input id= "boton_1" type="radio" name="estado" > 
         
         Ir a punto físico: 
-        <input type="radio" name="estado" value="2"> 
+        <input id= "boton_2" type="radio" name="estado" > 
         </form>
     </div>    
     <br>
     <nav>
-        <button id="comprar" type="button" onclick="location.href='productos.html'" > Iniciar compra </button>
-        <button id="limpiar" type="button" onclick=""> Limpiar Campos </button>
+        <button id="comprar" type="button" onclick="" > Iniciar compra </button>
+        <button id="limpiar" type="button" onclick="limpiar_formulario1()"> Limpiar Campos </button>
     </nav>
     <br>
     <br>
@@ -57,6 +57,7 @@
     <p> Bryann Alexander Anacona Parra </p>
 </footer>
 
-
+<script src="ProductosFerreteria.js" ></script>
+<script src="local.js" ></script>
 </body>
 </html>

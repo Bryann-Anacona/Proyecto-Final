@@ -5,7 +5,7 @@ const ProductosFerreteria = [
     precio: 20000,
     cantidad_disponible: 300,
     tipo: "Manual",
-    imagen: "imagenes/ferreteria.png",
+    imagen: "imagenes/martillo.png",
   },
   {
     codigo: 2,
@@ -165,7 +165,7 @@ const ProductosFerreteria = [
     precio: 32000,
     cantidad_disponible: 50,
     tipo: "Construccion",
-    imagen: "imagenes/.png",
+    imagen: "imagenes/cemento.png",
   },
   {
     codigo: 22,
@@ -320,3 +320,41 @@ const ProductosFerreteria = [
     imagen: "imagenes/manguera.png",
   },
 ];
+
+
+//localStorage.setItem= lo subo al local
+//JSON.stringify(objeto a cambiar) lo cambio de objeto a texto
+//JSON.parse( campo a cambiar) cambio el objeto texto a variables de nuevo
+localStorage.setItem("productos", JSON.stringify(ProductosFerreteria));
+const productosFerre = JSON.parse(localStorage.getItem("productos"));
+console.log(productosFerre);
+
+
+const productosDiv = document.getElementById('productos1');
+
+productosFerre.forEach(producto => {
+    const productoDiv = document.createElement('div');
+    productoDiv.classList.add('producto'); // Agrega una clase para estilo
+
+
+    const imagenProducto = document.createElement('img');
+    imagenProducto.src = producto.imagen;
+    productoDiv.classList.add('producti-imagen');
+    productoDiv.appendChild(imagenProducto);
+
+    const nombreProducto = document.createElement('h2');
+    nombreProducto.textContent = `Nombre: ${producto.nombre}`;
+    productoDiv.appendChild(nombreProducto);
+
+    const precioProducto = document.createElement('p');
+    precioProducto.textContent = `Precio: $${producto.precio}`;
+    productoDiv.appendChild(precioProducto);
+
+    const cantidadProducto = document.createElement('p');
+    cantidadProducto.textContent = `Cantidad disponible: $${producto.cantidad_disponible}`;
+    productoDiv.appendChild(cantidadProducto);
+
+
+  //se agregan todos los productos a la caja
+    productosDiv.appendChild(productoDiv);
+});

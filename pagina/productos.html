@@ -5,18 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Vista de Productos </title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="productos.css" />
 </head>
 <body>
     <header>
-        titulo de la pagina
-        <img src="" alt="Logo de Ferreteria">
+        
+        <img src="imagenes/ferreteria.png" alt="Logo de Ferreteria" width="500" height="300">
     </header>
 
     <nav>
 
-        <select name="" id=""> </select>
-        <select name="" id=""></select>
+        <label for="tipos">Tipo de herramienta: </label>
+        <select name="" id="tipos"> 
+            <option value="Manual">Manual</option>
+            <option value="Fijacion">Fijacion</option>
+            <option value="Construccion">Construccion</option>
+            <option value="Electricidad">Electricidad</option>
+            <option value="Jardineria">Jardineria</option>
+
+        </select>
+
+        <label for="precios">Precio: </label>
+        <select name="" id="precios">
+            <option value="100000"> 100.000</option>
+            <option value="500000">500.000</option>
+            <option value="1000000">1.000.000 o mas</option>
+        </select>
         <button> Filtrar</button>
         <button> Limpiar Filtros</button>
 
@@ -26,11 +40,7 @@
 
     <div id="contenedorGeneral1">
 
-        <div id="productos">
-            <article>
-
-            </article>
-        </div>
+        <div id="productos1"></div>
 
         <div id="detalles">
             <div id="datos2">
@@ -62,5 +72,8 @@
     <footer> 
         <p> Bryann Alexander Anacona Parra </p> 
     </footer>
+
+    <script src="local.js" ></script>
+    <script src="ProductosFerreteria.js" ></script>
 </body>
 </html>
